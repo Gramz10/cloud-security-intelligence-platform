@@ -1,11 +1,22 @@
+import logging
+
 from src.utils import get_platform_status, format_resource_name
 
+logging.basicConfig(
+    format='%(asctime)s %(levelname)s %(message)s ',
+    level=logging.INFO,
+    datefmt='%m/%d/%Y %I:%M:%S %p'
+)
+logger = logging.getLogger(__name__)
+
 def main():
+    logger.info("Starting Cloud Security Intelligence Platform")
+
     status = get_platform_status()
-    print(status)
+    logger.info(status)
 
     resource_name = format_resource_name("aws-server-01")
-    print(resource_name)
+    logger.info("Formatted resource name: %s", resource_name)
 
 
 if __name__ == "__main__":
