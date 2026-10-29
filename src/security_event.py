@@ -1,6 +1,7 @@
 import json
 import ipaddress
 from dataclasses import dataclass
+from datetime import datetime
 
 sample_json = '''
 {
@@ -57,9 +58,15 @@ def validate_nonempty_string(value: str) -> bool:
 
     return bool(value.strip())
 
-print(validate_nonempty_string("admin"))
-print(validate_nonempty_string("us-east-1"))
-print(validate_nonempty_string(""))
-print(validate_nonempty_string("   "))
-print(validate_nonempty_string(None))
-print(validate_nonempty_string(12345))
+def validate_timestamp(timestamp: str) -> bool:
+    """Check that timestamp is a nonempty string and parse."""
+
+    if validate_nonempty_string(timestamp) == True:
+
+        try:
+            return bool(datetime.fromisoformat(timestamp))
+
+        except ValueError:
+            return False
+
+print(validate_timestamp("2026-13-24T14:32:00+00:00"))
