@@ -48,3 +48,18 @@ def validate_source_ip(source_ip: str) -> bool:
     except ValueError:
         return False
 
+
+def validate_nonempty_string(value: str) -> bool:
+    """Return True if the value is a string containing non-whitespace text."""
+
+    if not isinstance(value, str):
+        return False
+
+    return bool(value.strip())
+
+print(validate_nonempty_string("admin"))
+print(validate_nonempty_string("us-east-1"))
+print(validate_nonempty_string(""))
+print(validate_nonempty_string("   "))
+print(validate_nonempty_string(None))
+print(validate_nonempty_string(12345))
