@@ -71,7 +71,7 @@ def test_none_security_event():
     #Assert
     assert result is False
 
-def test_nonempty_string_security_event():
+def test_reject_whitespace_username():
     
     #Arrange
     test_event = {
