@@ -75,8 +75,7 @@ def validate_timestamp(timestamp: str) -> bool:
             logger.warning("Timestamp is missing timezone information.")
             return False
 
-        elif parsed_timestamp.tzinfo is not None:
-            return True
+        return True
 
     except ValueError:
 
@@ -88,6 +87,9 @@ def validate_security_event(event_data: dict) -> bool:
     """Check whether a security event contains all required fields."""
 
     if not isinstance(event_data, dict):
+        
+        logger.warning("Incoming security event is not a dictionary.")
+        
         return False
 
     required_fields = [
@@ -113,6 +115,9 @@ def validate_security_event(event_data: dict) -> bool:
         return False
 
     if not validate_source_ip(event_data["source_ip"]):
+
+        logger.warning("Invalid source IP address.")
+        
         return False
 
     string_fields = [
@@ -124,9 +129,30 @@ def validate_security_event(event_data: dict) -> bool:
 
     for field in string_fields:
         if not validate_nonempty_string(event_data[field]):
+            
+            logger.warning("Invalid or empty field: %s", field)
+            
             return False
 
     return True
+
+def create_security_event(event_data: dict) -> SecurityEvent | None:
+    """Create a SecurityEvent only when the incoming data is valid."""
+
+    if not validate_security_event(event_data):
+        return None
+ 
+    event = SecurityEvent(
+        timestamp=event_data['timestamp'],
+        source_ip=event_data['source_ip'],
+        user=event_data['user'],
+        action=event_data['action'],
+        resource=event_data['resource'],
+        region=event_data['region']
+        )
+
+    return event
+
 
 if __name__ == "__main__":
     logging.basicConfig(
@@ -134,16 +160,17 @@ if __name__ == "__main__":
         level=logging.INFO,
         datefmt="%m/%d/%Y %I:%M:%S %p"
     )
-    incomplete_event = {
-    "timestamp": "not-a-date",
-    "source_ip": "203.0.113.42",
-    "user": "admin",
-    "action": "ConsoleLogin",
-    "resource": "aws-server-01",
-    "region": "Northwest"
+
+
+    test_event = {
+        "timestamp": "2026-10-24T14:32:00Z",
+        "source_ip": "not-an-address",
+        "user": "admin",
+        "action": "ConsoleLogin",
+        "resource": "aws-server-01",
+        "region": "us-east-1"
     }
 
-#print(validate_security_event(incomplete_event))
-print(validate_timestamp("2026-10-24T14:32:00Z"))
-print(validate_timestamp("2026-10-24T14:32:00"))
-print(validate_timestamp("not-a-date"))
+    result = create_security_event(test_event)
+    print(result)
+    print(type(result))
