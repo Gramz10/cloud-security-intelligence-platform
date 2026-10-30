@@ -1,7 +1,10 @@
 import json
 import ipaddress
+import logging
 from dataclasses import dataclass
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 sample_json = '''
 {
@@ -59,14 +62,88 @@ def validate_nonempty_string(value: str) -> bool:
     return bool(value.strip())
 
 def validate_timestamp(timestamp: str) -> bool:
-    """Check that timestamp is a nonempty string and parse."""
+    """Check that timestamp is a nonempty string. Also parse the timestamp."""
 
-    if validate_nonempty_string(timestamp) == True:
+    if not validate_nonempty_string(timestamp):
+        return False
 
-        try:
-            return bool(datetime.fromisoformat(timestamp))
+    try:
+        parsed_timestamp = datetime.fromisoformat(timestamp)
 
-        except ValueError:
+        if parsed_timestamp.tzinfo is None:
+
+            logger.warning("Timestamp is missing timezone information.")
             return False
 
-print(validate_timestamp("2026-13-24T14:32:00+00:00"))
+        elif parsed_timestamp.tzinfo is not None:
+            return True
+
+    except ValueError:
+
+        logger.warning("Timestamp cannot be parsed.")
+
+        return False
+
+def validate_security_event(event_data: dict) -> bool:
+    """Check whether a security event contains all required fields."""
+
+    if not isinstance(event_data, dict):
+        return False
+
+    required_fields = [
+        "timestamp",
+        "source_ip",
+        "user",
+        "action",
+        "resource",
+        "region"
+    ]
+
+    for field in required_fields:
+        if field not in event_data:
+
+            logger.warning("Missing event_data field: %s", field)
+
+            return False
+
+    if not validate_timestamp(event_data["timestamp"]):
+
+        logger.warning("Invalid event timestamp")
+        
+        return False
+
+    if not validate_source_ip(event_data["source_ip"]):
+        return False
+
+    string_fields = [
+        "user",
+        "action",
+        "resource",
+        "region"
+    ]
+
+    for field in string_fields:
+        if not validate_nonempty_string(event_data[field]):
+            return False
+
+    return True
+
+if __name__ == "__main__":
+    logging.basicConfig(
+        format="%(asctime)s %(levelname)s %(name)s %(message)s",
+        level=logging.INFO,
+        datefmt="%m/%d/%Y %I:%M:%S %p"
+    )
+    incomplete_event = {
+    "timestamp": "not-a-date",
+    "source_ip": "203.0.113.42",
+    "user": "admin",
+    "action": "ConsoleLogin",
+    "resource": "aws-server-01",
+    "region": "Northwest"
+    }
+
+#print(validate_security_event(incomplete_event))
+print(validate_timestamp("2026-10-24T14:32:00Z"))
+print(validate_timestamp("2026-10-24T14:32:00"))
+print(validate_timestamp("not-a-date"))
