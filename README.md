@@ -1,2 +1,4 @@
 # cloud-security-intelligence-platform
-This will be a repo for my cloud security intelligence that I will build for learning purposes
+### Project Overview
+
+The Cloud Security Intelligence Platform is a Python-based project designed to ingest, validate, and analyze security events from sources such as AWS CloudTrail. The platform currently includes foundational security-event validation, structured data objects, logging, and automated testing. Future development will incorporate data analytics and machine learning techniques to identify unusual activity, rank potentially suspicious events for analyst investigation, and forecast security-event volumes to support workload planning. The goal is to help security analysts make more informed decisions and prioritize potential threats while reducing unnecessary manual analysis.
