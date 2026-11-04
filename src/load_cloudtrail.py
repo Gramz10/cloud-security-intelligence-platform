@@ -1,29 +1,32 @@
 import json
 
-with open("data/sample_cloudtrail.json", "r") as file:
-    data = json.load(file)
 
-''' Checking the different data types at each level of the sample_cloudtrail.json
-print(type(data))
-print(type(data["Records"]))
-print(type(data["Records"][0]))
-'''
+def load_cloudtrail(file_path: str) -> list[dict]:
+    """Load and validate CloudTrail records from a local JSON file."""
+    try: 
+        with open(file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
 
-first_event = data["Records"][0]
-print(first_event)
+    except json.JSONDecodeError:
+        raise ValueError("Unable to parse CloudTrail JSON.")
 
-print(type(first_event["userIdentity"]))
+    if not isinstance(data, dict):
+        raise ValueError("CloudTrail JSON must contain a dictionary.")
 
-user_identity = first_event["userIdentity"]
-user_name = user_identity["userName"]
-print(user_name)
+    if "Records" not in data:
+        raise ValueError("Missing Records field")
 
-field_map = {
-    "timestamp": first_event["eventTime"],
-    "action": first_event["eventName"],
-    "source_ip": first_event["sourceIPAddress"],
-    "region": first_event["awsRegion"],
-    "user": first_event["userIdentity"]["userName"]
-}
+    records = data["Records"]
 
-print(field_map)
+    if not isinstance(records, list):
+        raise ValueError("Records must be a list.")
+
+    if not records:
+        raise ValueError("No security events found.")
+
+    for event in records:
+
+        if not isinstance(event, dict):
+            raise ValueError("Invalid record type.")
+
+    return records
