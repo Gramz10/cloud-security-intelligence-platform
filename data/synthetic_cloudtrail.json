@@ -1,0 +1,1419 @@
+{
+  "_metadata": {
+    "synthetic": true,
+    "description": "Synthetic CloudTrail-style events for learning and testing",
+    "seed": 42
+  },
+  "Records": [
+    {
+      "eventTime": "2026-11-11T07:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-10T02:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T13:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T08:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T11:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T12:00:00+00:00",
+      "eventName": "PutObject",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T01:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T14:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T22:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T14:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T01:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T06:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T23:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T04:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-11T21:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-12T17:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-12T03:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T05:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-11T04:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T03:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T02:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T17:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T22:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T07:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T22:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T08:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T07:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T11:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T01:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T14:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T03:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T15:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T08:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T21:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T01:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-10T16:00:00+00:00",
+      "eventName": "PutObject",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T18:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T16:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T21:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T03:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T11:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T21:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T23:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T16:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T01:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T22:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-10T11:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-10T11:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T23:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T23:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T05:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-13T11:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T12:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T21:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T08:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T16:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T00:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T19:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T10:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T21:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T09:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T16:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T21:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T04:00:00+00:00",
+      "eventName": "PutObject",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T20:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T20:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T14:00:00+00:00",
+      "eventName": "GetObject",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T17:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T17:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T16:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T08:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T22:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T13:00:00+00:00",
+      "eventName": "GetObject",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T12:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T19:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T10:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T00:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T14:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T12:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T23:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T00:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T15:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T05:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T00:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T18:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T03:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T02:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T20:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T20:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T08:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T18:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-13T06:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T00:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T07:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "analyst"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T07:00:00+00:00",
+      "eventName": "GetObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "service-user"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-11T07:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ],
+      "errorCode": "AccessDenied",
+      "errorMessage": "User is not authorized to perform this action"
+    },
+    {
+      "eventTime": "2026-11-10T02:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "203.0.113.42",
+      "awsRegion": "us-west-2",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-14T13:00:00+00:00",
+      "eventName": "PutObject",
+      "sourceIPAddress": "192.0.2.15",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-12T08:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "eu-west-1",
+      "userIdentity": {
+        "userName": "admin"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    },
+    {
+      "eventTime": "2026-11-10T11:00:00+00:00",
+      "eventName": "ConsoleLogin",
+      "sourceIPAddress": "198.51.100.5",
+      "awsRegion": "us-east-1",
+      "userIdentity": {
+        "userName": "developer"
+      },
+      "resources": [
+        {
+          "resourceName": "analytics-logs"
+        }
+      ]
+    }
+  ]
+}
